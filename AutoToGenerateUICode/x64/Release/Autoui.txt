@@ -1,0 +1,1845 @@
+﻿请根据UI组件设计稿的HTML和CSS代码，将其转成Qt的.ui组件
+要求：
+1. 引用组件时，不需要包含路径，仅包含文件名就行如MtLineEdit.h而不是MtCustomPlugin/MtLineEdit.h
+2. 组件个数以及内容不能有遗漏，后续需要使用完整的ui文件内容
+3. 务必提供根据HTML和CSS代码提供完整的ui文件内容
+4. 不用调整样式和布局，但是每个原子组件的单元长度像素值需要匹配
+5. 给出的ui文件务必正确，不能出现错误
+
+可能需要使用到的组件有：
+1. MtCheckBox.h
+2. MtComboBox.h
+3. MtLabel.h
+4. MtLineEdit.h
+5. MtLineLabel.h
+6. MtPushButton.h
+7. MtRadioButton.h
+8. MtRangeLineEdit.h
+9. WarningComboBox.h
+10. WarningSearchComboBox.h
+
+源代码：
+HTML部分： <div class="group_165 flex-col justify-end">
+            <div class="box_128 flex-row justify-between">
+              <span class="text_440">新建计划</span>
+              <img
+                class="thumbnail_291"
+                referrerpolicy="no-referrer"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng0827b8a4b1183fdcf427c6123ce4fef21dc8a0206ce8578bbecf0010d1ea7b8d"
+              />
+            </div>
+            <div class="box_129 flex-row">
+              <span class="text_441">名称</span>
+              <div class="group_166 flex-col">
+                <div class="group_167 flex-row">
+                  <div class="image-wrapper_6 flex-col">
+                    <img
+                      class="thumbnail_257"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng956c678e3e4cea89015618a91f250ab5d8c809bd26f10108544b138794cc46d5"
+                    />
+                  </div>
+                </div>
+                <div class="text-wrapper_137 flex-row">
+                  <span class="text_442">Plan1</span>
+                </div>
+              </div>
+              <span class="text_443">计划者</span>
+              <div class="text-wrapper_138 flex-col">
+                <span class="text_444">CT2</span>
+              </div>
+            </div>
+            <div class="box_130 flex-row">
+              <span class="text_445">计划图像</span>
+              <div class="box_131 flex-row">
+                <span class="text_446">CT1</span>
+                <img
+                  class="thumbnail_292"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng88483fdbe2dc2d9d6b462eb9d8d32aae47ea404d75933b291e017866a7f901b1"
+                />
+              </div>
+              <span class="text_447">患者摆位</span>
+              <div class="box_132 flex-row">
+                <span class="text_448">HFS：Head&nbsp;First&nbsp;Supir</span>
+                <img
+                  class="thumbnail_293"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                />
+              </div>
+            </div>
+            <div class="box_133 flex-row justify-between">
+              <span class="text_449">描述</span>
+              <div class="text-wrapper_139 flex-col">
+                <span class="text_450">这里添加描述</span>
+              </div>
+            </div>
+            <div class="box_134 flex-row">
+              <img
+                class="thumbnail_260"
+                referrerpolicy="no-referrer"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+              />
+              <span class="text_451">&nbsp;器官限量模版</span>
+              <div class="group_168 flex-row">
+                <span class="text_452">Conventional&nbsp;fractionation</span>
+                <img
+                  class="thumbnail_294"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                />
+              </div>
+            </div>
+            <div class="box_135 flex-row">
+              <div class="group_169 flex-col justify-end">
+                <span class="text_453">射束组-1</span>
+                <div class="section_54 flex-col"></div>
+              </div>
+              <div class="text-wrapper_140 flex-col">
+                <span class="text_454">创建模版</span>
+              </div>
+              <div class="text-wrapper_141 flex-col">
+                <span class="text_455">加载模版</span>
+              </div>
+            </div>
+            <div class="box_136 flex-row justify-between">
+              <img
+                class="thumbnail_295"
+                referrerpolicy="no-referrer"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+              />
+              <span class="text_456">SBRT计划</span>
+            </div>
+            <div class="box_137 flex-row">
+              <img
+                class="thumbnail_296"
+                referrerpolicy="no-referrer"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+              />
+              <span class="text_457">档块</span>
+              <div class="text-wrapper_142 flex-col">
+                <span class="text_458">Electron</span>
+              </div>
+              <div class="block_77 flex-col"></div>
+            </div>
+            <div class="box_138 flex-col">
+              <img
+                class="image_17"
+                referrerpolicy="no-referrer"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng64cd427f06db058450c691ddcf008ddeae0e5dc486b05e1abc64370c2d0c8953"
+              />
+              <div class="group_170 flex-row justify-between">
+                <div class="text-wrapper_143 flex-col">
+                  <span class="text_459">取消</span>
+                </div>
+                <div class="group_171 flex-col"></div>
+                <div class="text-wrapper_144 flex-col">
+                  <span class="text_460">创建</span>
+                </div>
+              </div>
+            </div>
+            <div class="group_126 flex-col">
+              <div class="block_86 flex-row justify-between">
+                <div class="group_127 flex-col"></div>
+                <span class="text_347">基本信息</span>
+                <div class="group_128 flex-col"></div>
+              </div>
+              <div class="block_87 flex-row">
+                <span class="text_461">名称</span>
+                <div class="text-wrapper_145 flex-col">
+                  <span class="text_462">Plan1</span>
+                </div>
+                <span class="text_463">治疗机</span>
+                <div class="box_139 flex-row">
+                  <span class="text_464">NO.1manchine</span>
+                  <img
+                    class="thumbnail_297"
+                    referrerpolicy="no-referrer"
+                    src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                  />
+                </div>
+              </div>
+              <div class="block_88 flex-row">
+                <span class="text_465">辐射类型</span>
+                <div class="box_140 flex-row">
+                  <div class="image-text_198 flex-row justify-between">
+                    <span class="text-group_192">Photons</span>
+                    <img
+                      class="thumbnail_298"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+                <span class="text_466">技术</span>
+                <div class="box_141 flex-row">
+                  <div class="image-text_199 flex-row justify-between">
+                    <span class="text-group_193">Electron</span>
+                    <img
+                      class="thumbnail_299"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="block_89 flex-row justify-between">
+                <span class="text_467">描述</span>
+                <div class="text-wrapper_146 flex-col">
+                  <span class="text_468">Electron</span>
+                </div>
+              </div>
+              <div class="block_90 flex-row justify-between">
+                <div class="box_116 flex-col"></div>
+                <span class="text_356">目标剂量</span>
+                <div class="box_117 flex-col"></div>
+              </div>
+              <div class="block_91 flex-row">
+                <span class="text_469">总剂量</span>
+                <div class="text-wrapper_147 flex-row">
+                  <span class="text_470">计量数值</span>
+                  <span class="text_471">cGy</span>
+                </div>
+                <span class="text_472">CT2</span>
+                <div class="text-wrapper_148 flex-col">
+                  <span class="text_473">分次数</span>
+                </div>
+              </div>
+              <div class="block_92 flex-row">
+                <span class="text_474">分次剂量</span>
+                <div class="text-wrapper_149 flex-row">
+                  <span class="text_475">计量数</span>
+                  <span class="text_476">cGy</span>
+                </div>
+                <span class="text_477">百分比</span>
+                <div class="text-wrapper_150 flex-col">
+                  <span class="text_478">百分比值</span>
+                </div>
+              </div>
+              <div class="block_93 flex-row justify-between">
+                <div class="section_39 flex-col"></div>
+                <span class="text_367">目标靶区</span>
+                <div class="section_40 flex-col"></div>
+              </div>
+              <div class="block_94 flex-row">
+                <span class="text_479">ROI</span>
+                <div class="block_95 flex-row">
+                  <div class="image-text_200 flex-row justify-between">
+                    <span class="text-group_194"
+                      >HFS：Head&nbsp;First&nbsp;Supir</span
+                    >
+                    <img
+                      class="thumbnail_300"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+                <span class="text_480">POI</span>
+                <div class="block_96 flex-row">
+                  <div class="image-text_201 flex-row justify-between">
+                    <span class="text-group_195">Pituitary</span>
+                    <img
+                      class="thumbnail_301"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="block_97 flex-row justify-between">
+                <div class="block_78 flex-col"></div>
+                <span class="text_370">归一设置</span>
+                <div class="block_79 flex-col"></div>
+              </div>
+              <div class="block_98 flex-row">
+                <img
+                  class="thumbnail_302"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng64af8f5261035b238faf074f0456124eb3738fe3c625fb83e488e51d69ba41a1"
+                />
+                <span class="text_481">ROI</span>
+                <div class="group_172 flex-row">
+                  <div class="image-text_202 flex-row justify-between">
+                    <span class="text-group_196">PharyngealConstrictors_U</span>
+                    <img
+                      class="thumbnail_303"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="block_99 flex-row">
+                <div class="text-wrapper_151 flex-row">
+                  <span class="text_482">[1.00&nbsp;～&nbsp;100.00]</span>
+                  <span class="text_483">%</span>
+                </div>
+                <span class="text_374">总剂量覆盖</span>
+                <div class="text-wrapper_152 flex-row">
+                  <span class="text_484">[1.00&nbsp;～&nbsp;100.00]</span>
+                  <span class="text_485">%</span>
+                </div>
+                <span class="text_377">靶区体积</span>
+              </div>
+              <div class="block_100 flex-row">
+                <img
+                  class="thumbnail_304"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng64af8f5261035b238faf074f0456124eb3738fe3c625fb83e488e51d69ba41a1"
+                />
+                <span class="text_486">ROI</span>
+                <div class="section_55 flex-row">
+                  <div class="image-text_203 flex-row justify-between">
+                    <span class="text-group_197">PharyngealConstrictors_U</span>
+                    <img
+                      class="thumbnail_305"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="block_101 flex-row justify-between">
+                <span class="text_487">ROI平均剂量归一为</span>
+                <div class="text-wrapper_153 flex-row">
+                  <span class="text_488">[1.00&nbsp;～&nbsp;100.00]</span>
+                  <span class="text_489">%</span>
+                </div>
+                <span class="text_382">总剂量</span>
+              </div>
+              <div class="block_102 flex-row">
+                <img
+                  class="thumbnail_306"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng64af8f5261035b238faf074f0456124eb3738fe3c625fb83e488e51d69ba41a1"
+                />
+                <span class="text_490">ROI</span>
+                <div class="box_142 flex-row">
+                  <div class="image-text_204 flex-row justify-between">
+                    <span class="text-group_198">OpticNerve_R</span>
+                    <img
+                      class="thumbnail_307"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="block_103 flex-row justify-between">
+                <span class="text_491">参考点剂量归一为</span>
+                <div class="text-wrapper_154 flex-row">
+                  <span class="text_492">[1.00&nbsp;～&nbsp;10000.00]</span>
+                  <span class="text_493">%</span>
+                </div>
+                <span class="text_387">总剂量</span>
+              </div>
+              <div class="block_104 flex-row justify-between">
+                <div class="group_133 flex-col"></div>
+                <span class="text_388">电子线计划</span>
+                <div class="group_134 flex-col"></div>
+              </div>
+              <div class="block_105 flex-row justify-between">
+                <span class="text_494">限光筒</span>
+                <div class="group_173 flex-row">
+                  <div class="image-text_205 flex-row justify-between">
+                    <span class="text-group_199">Photons</span>
+                    <img
+                      class="thumbnail_308"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7ab3d66aeebe34293b6a00117660cad2fe2d421e7330e90994783e020dd82f49"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+CSS部分： 
+.group_165 {
+  position: relative;
+  width: 678px;
+  height: 987px;
+  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngcb86a5c5f15797165d24336c29f1b3a5eb2a440395070f909ede7d04818a0f0a) -1px -1px
+    no-repeat;
+  background-size: 680px 989px;
+  opacity: 1;
+}
+.box_128 {
+  width: 630px;
+  height: 22px;
+  margin: 11px 0 0 24px;
+}
+.text_440 {
+  width: 64px;
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 16px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+.thumbnail_291 {
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+}
+.box_129 {
+  width: 605px;
+  height: 30px;
+  margin: 15px 0 0 49px;
+}
+.text_441 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.group_166 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+  width: 242px;
+}
+.group_167 {
+  width: 1px;
+  height: 1px;
+  margin-left: 227px;
+}
+.image-wrapper_6 {
+  height: 1px;
+  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng956c678e3e4cea89015618a91f250ab5d8c809bd26f10108544b138794cc46d5)
+    100% no-repeat;
+  background-size: 100% 100%;
+  width: 1px;
+}
+.thumbnail_257 {
+  width: 1px;
+  height: 1px;
+}
+.text-wrapper_137 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 7px 16px;
+}
+.text_442 {
+  width: 207px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.text_443 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 8px 0 0 40px;
+}
+.text-wrapper_138 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+  width: 231px;
+}
+.text_444 {
+  width: 197px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.box_130 {
+  width: 629px;
+  height: 30px;
+  margin: 8px 0 0 25px;
+}
+.text_445 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 7px;
+}
+.box_131 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 242px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_446 {
+  width: 191px;
+  height: 18px;
+  overflow-wrap: break-word;
+  color: rgba(219, 226, 241, 1);
+  font-size: 12px;
+  font-family: SourceHanSansSC-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 18px;
+  margin: 6px 0 0 16px;
+}
+.thumbnail_292 {
+  width: 12px;
+  height: 12px;
+  margin: 9px 8px 0 15px;
+}
+.text_447 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 28px;
+}
+.box_132 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_448 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 6px 0 0 16px;
+}
+.thumbnail_293 {
+  width: 12px;
+  height: 12px;
+  margin: 9px 8px 0 14px;
+}
+.box_133 {
+  width: 605px;
+  height: 30px;
+  margin: 8px 0 0 49px;
+}
+.text_449 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_139 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  width: 565px;
+}
+.text_450 {
+  width: 494px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.box_134 {
+  width: 629px;
+  height: 30px;
+  margin: 9px 0 0 25px;
+}
+.thumbnail_260 {
+  width: 12px;
+  height: 12px;
+  margin-top: 9px;
+}
+.text_451 {
+  width: 76px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 5px;
+}
+.group_168 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 520px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_452 {
+  width: 425px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 6px 0 0 16px;
+}
+.thumbnail_294 {
+  width: 12px;
+  height: 12px;
+  margin: 9px 8px 0 59px;
+}
+.box_135 {
+  width: 630px;
+  height: 30px;
+  margin: 16px 0 0 24px;
+}
+.group_169 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px 4px 0px 0px;
+  width: 83px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+}
+.text_453 {
+  width: 51px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(36, 155, 217, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.section_54 {
+  background-color: rgba(36, 155, 217, 1);
+  width: 83px;
+  height: 2px;
+  margin-top: 5px;
+}
+.text-wrapper_140 {
+  border-radius: 4px;
+  height: 22px;
+  border: 1px solid rgba(219, 226, 241, 0.34);
+  margin-left: 379px;
+  width: 80px;
+}
+.text_454 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 3px 0 0 16px;
+}
+.text-wrapper_141 {
+  border-radius: 4px;
+  height: 22px;
+  border: 1px solid rgba(219, 226, 241, 0.34);
+  margin-left: 8px;
+  width: 80px;
+}
+.text_455 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 3px 0 0 16px;
+}
+.box_136 {
+  width: 81px;
+  height: 16px;
+  margin: 154px 0 0 40px;
+}
+.thumbnail_295 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.text_456 {
+  width: 62px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.box_137 {
+  width: 305px;
+  height: 30px;
+  margin: 466px 0 0 336px;
+}
+.thumbnail_296 {
+  width: 10px;
+  height: 10px;
+  margin-top: 11px;
+}
+.text_457 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 8px 0 0 10px;
+}
+.text-wrapper_142 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+  width: 166px;
+}
+.text_458 {
+  width: 137px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_77 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 71px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 8px;
+}
+.box_138 {
+  width: 678px;
+  height: 48px;
+  margin-top: 34px;
+}
+.image_17 {
+  width: 678px;
+  height: 1px;
+}
+.group_170 {
+  width: 176px;
+  height: 30px;
+  margin: 8px 0 9px 478px;
+}
+.text-wrapper_143 {
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(219, 226, 241, 0.34);
+  width: 80px;
+}
+.text_459 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 28px;
+}
+.group_171 {
+  width: 16px;
+  height: 22px;
+  margin-top: 4px;
+}
+.text-wrapper_144 {
+  background-color: rgba(36, 155, 217, 1);
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+}
+.text_460 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 28px;
+}
+.group_126 {
+  position: absolute;
+  left: 24px;
+  top: 239px;
+  width: 630px;
+  height: 680px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.block_86 {
+  width: 602px;
+  height: 16px;
+  margin: 16px 0 0 14px;
+}
+.group_127 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin-top: 7px;
+}
+.text_347 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-left: 17px;
+}
+.group_128 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin: 7px 0 0 17px;
+}
+.block_87 {
+  width: 579px;
+  height: 30px;
+  margin: 8px 0 0 38px;
+}
+.text_461 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_145 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+  width: 231px;
+}
+.text_462 {
+  width: 197px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_463 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 25px;
+}
+.box_139 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_464 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 6px 0 0 16px;
+}
+.thumbnail_297 {
+  width: 12px;
+  height: 12px;
+  margin: 9px 8px 0 14px;
+}
+.block_88 {
+  width: 603px;
+  height: 30px;
+  margin: 8px 0 0 14px;
+}
+.text_465 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 7px;
+}
+.box_140 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_198 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_192 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_298 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.text_466 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 37px;
+}
+.box_141 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_199 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_193 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_299 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.block_89 {
+  width: 579px;
+  height: 30px;
+  margin: 8px 0 0 38px;
+}
+.text_467 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_146 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  width: 539px;
+}
+.text_468 {
+  width: 478px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_90 {
+  width: 602px;
+  height: 16px;
+  margin: 40px 0 0 15px;
+}
+.box_116 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin-top: 6px;
+}
+.text_356 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-left: 17px;
+}
+.box_117 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin: 6px 0 0 17px;
+}
+.block_91 {
+  width: 591px;
+  height: 30px;
+  margin: 8px 0 0 26px;
+}
+.text_469 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_147 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_470 {
+  width: 176px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_471 {
+  width: 26px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 -1px;
+}
+.text_472 {
+  width: 27px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 8px 0 0 34px;
+}
+.text-wrapper_148 {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.1);
+  margin-left: 16px;
+  width: 231px;
+}
+.text_473 {
+  width: 197px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_92 {
+  width: 602px;
+  height: 30px;
+  margin: 8px 0 0 14px;
+}
+.text_474 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_149 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_475 {
+  width: 176px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_476 {
+  width: 26px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 -1px;
+}
+.text_477 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 8px 0 0 25px;
+}
+.text-wrapper_150 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+  width: 230px;
+}
+.text_478 {
+  width: 196px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_93 {
+  width: 602px;
+  height: 16px;
+  margin: 16px 0 0 14px;
+}
+.section_39 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin-top: 7px;
+}
+.text_367 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-left: 17px;
+}
+.section_40 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin: 7px 0 0 17px;
+}
+.block_94 {
+  width: 580px;
+  height: 30px;
+  margin: 8px 0 0 37px;
+}
+.text_479 {
+  width: 25px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 7px;
+}
+.block_95 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_200 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_194 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_300 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.text_480 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 37px;
+}
+.block_96 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_201 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_195 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_301 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.block_97 {
+  width: 602px;
+  height: 16px;
+  margin: 16px 0 0 14px;
+}
+.block_78 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin-top: 7px;
+}
+.text_370 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-left: 17px;
+}
+.block_79 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin: 7px 0 0 17px;
+}
+.block_98 {
+  width: 295px;
+  height: 30px;
+  margin: 8px 0 0 14px;
+}
+.thumbnail_302 {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+}
+.text_481 {
+  width: 25px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 9px;
+}
+.group_172 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_202 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_196 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_303 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.block_99 {
+  width: 538px;
+  height: 30px;
+  margin: 4px 0 0 78px;
+}
+.text-wrapper_151 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 189px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+}
+.text_482 {
+  width: 142px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_483 {
+  width: 12px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 5px;
+}
+.text_374 {
+  width: 60px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text-wrapper_152 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 189px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 20px;
+}
+.text_484 {
+  width: 142px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_485 {
+  width: 12px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 5px;
+}
+.text_377 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_100 {
+  width: 295px;
+  height: 30px;
+  margin: 8px 0 0 14px;
+}
+.thumbnail_304 {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+}
+.text_486 {
+  width: 25px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 9px;
+}
+.section_55 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_203 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_197 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_305 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.block_101 {
+  width: 538px;
+  height: 30px;
+  margin: 4px 0 0 78px;
+}
+.text_487 {
+  width: 109px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_153 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 361px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_488 {
+  width: 283px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_489 {
+  width: 12px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 36px;
+}
+.text_382 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_102 {
+  width: 295px;
+  height: 30px;
+  margin: 8px 0 0 14px;
+}
+.thumbnail_306 {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+}
+.text_490 {
+  width: 25px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 9px;
+}
+.box_142 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 231px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.image-text_204 {
+  width: 207px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_198 {
+  width: 181px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_307 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+.block_103 {
+  width: 538px;
+  height: 30px;
+  margin: 4px 0 0 78px;
+}
+.text_491 {
+  width: 96px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 8px;
+}
+.text-wrapper_154 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 374px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  margin-left: 16px;
+}
+.text_492 {
+  width: 294px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.text_493 {
+  width: 12px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 14px 0 38px;
+}
+.text_387 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 16px;
+}
+.block_104 {
+  width: 602px;
+  height: 16px;
+  margin: 16px 0 0 14px;
+}
+.group_133 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin-top: 7px;
+}
+.text_388 {
+  width: 60px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-left: 11px;
+}
+.group_134 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 260px;
+  height: 1px;
+  margin: 7px 0 0 11px;
+}
+.block_105 {
+  width: 257px;
+  height: 30px;
+  margin: 8px 0 14px 26px;
+}
+.text_494 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 7px;
+}
+.group_173 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 205px;
+  height: 30px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+}
+.image-text_205 {
+  width: 181px;
+  height: 16px;
+  margin: 6px 0 0 16px;
+}
+.text-group_199 {
+  width: 159px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_308 {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}

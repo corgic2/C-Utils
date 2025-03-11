@@ -1,0 +1,1 @@
+Qt工具，采用Qt + Python代码实现Cursor + Qtui 组件代码自动生成
