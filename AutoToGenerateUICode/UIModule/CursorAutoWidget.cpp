@@ -28,10 +28,35 @@ CursorAutoWidget::CursorAutoWidget(QWidget *parent) : QMainWindow(parent), ui(ne
     connect(ui->pushButton_6, &QPushButton::clicked, this, &CursorAutoWidget::on_pushButton_6Clicked);
     connect(ui->pushButton_7, &QPushButton::clicked, this, &CursorAutoWidget::on_pushButton_7Clicked);
     connect(ui->pushButton_8, &QPushButton::clicked, this, &CursorAutoWidget::on_pushButton_8Clicked);
-
+    connect(ui->pushButton_9, &QPushButton::clicked,
+            [&]
+            {
+                ui->textEdit->clear();
+            });
+    connect(ui->pushButton_10, &QPushButton::clicked,
+            [&]
+            {
+                ui->textEdit_2->clear();
+            });
+    connect(ui->toolButton, &QPushButton::clicked,
+            [&]
+            {
+                ui->textEdit_4->clear();
+            });
+    connect(ui->toolButton_2, &QPushButton::clicked,
+            [&]
+            {
+                ui->textEdit_3->clear();
+            });
+    connect(ui->toolButton_3, &QPushButton::clicked,
+            [&]
+            {
+                ui->textEdit_5->clear();
+            });
     loadCursorPathFromConfig();
     ui->pushButton_5->hide();
 }
+
 // 回调函数，用于枚举窗口
 BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)
 {
@@ -202,6 +227,14 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab1()
     QString cursorPath = ui->lineEdit->text();
     if (!cursorPath.isEmpty())
     {
+        if (m_msg)
+        {
+            delete m_msg;
+            m_msg = nullptr;
+        }
+        m_msg = new QMessageBox;
+        m_msg->setText("请停止操作鼠标，并等待脚本操作完成\n操作完成后，请自行导入需要修改的cpp和ui文件在AI交互语句的开头");
+        m_msg->show();
         if (FALSE == EnumWindows(EnumWindowsProc, 0))
         {
         }
@@ -283,6 +316,14 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab2()
     QString cursorPath = ui->lineEdit->text();
     if (!cursorPath.isEmpty())
     {
+        if (m_msg)
+        {
+            delete m_msg;
+            m_msg = nullptr;
+        }
+        m_msg = new QMessageBox;
+        m_msg->setText("请停止操作鼠标，并等待脚本操作完成\n操作完成后，请自行导入需要修改的cpp和ui文件在AI交互语句的开头");
+        m_msg->show();
         if (FALSE == EnumWindows(EnumWindowsProc, 0))
         {
         }

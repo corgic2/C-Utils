@@ -7,6 +7,7 @@
 
 #include "ui_CursorAutoWidget.h"
 
+class QMessageBox;
 QT_BEGIN_NAMESPACE
 namespace Ui
 {
@@ -36,7 +37,9 @@ class CursorAutoWidget : public QMainWindow
 
   private:
     Ui::CursorAutoWidgetClass *ui;
-    QProcess *m_cursorProcess;
-    QStandardItemModel *m_model;
+    QProcess *m_cursorProcess = nullptr;
+    QStandardItemModel *m_model = nullptr;
     QStringList m_fileNames;
+    QMessageBox *m_msg = nullptr;
+
 };

@@ -23,6 +23,7 @@ def main(file_names,filePath):
     time.sleep(2)
     # 模拟按下 Ctrl + L 切换聊天模式
     simulate_key_press('i', ['ctrl'])
+    simulate_key_press('n', ['ctrl'])
     simulate_key_press('l', ['ctrl'])
     for file_name in file_names:
         # 模拟按下 Ctrl + Alt + P
