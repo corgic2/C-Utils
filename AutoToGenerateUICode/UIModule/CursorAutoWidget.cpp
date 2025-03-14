@@ -97,10 +97,12 @@ BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)
 
     return TRUE;
 }
+
 CursorAutoWidget::~CursorAutoWidget()
 {
     delete ui;
 }
+
 // 新增槽函数
 void CursorAutoWidget::on_pushButton_4Clicked()
 {
@@ -113,9 +115,10 @@ void CursorAutoWidget::on_pushButton_4Clicked()
     // 可选：清空文件名列表（如果需要）
     m_fileNames.clear();
 }
+
 void CursorAutoWidget::loadCursorPathFromConfig()
 {
-    QString configFilePath = QApplication::applicationDirPath() + "/AutoCursor.ini";
+    QString configFilePath = QApplication::applicationDirPath() + "/templates/AutoCursor.ini";
     QSettings settings(configFilePath, QSettings::IniFormat);
     settings.beginGroup("Cursor");
     QString cursorPath = settings.value("CursorPath").toString();
@@ -128,7 +131,7 @@ void CursorAutoWidget::loadCursorPathFromConfig()
 
 void CursorAutoWidget::saveCursorPathToConfig(const QString &cursorPath)
 {
-    QString configFilePath = QApplication::applicationDirPath() + "/AutoCursor.ini";
+    QString configFilePath = QApplication::applicationDirPath() + "/templates/AutoCursor.ini";
     QSettings settings(configFilePath, QSettings::IniFormat);
     settings.beginGroup("Cursor");
     settings.setValue("CursorPath", cursorPath);
@@ -174,6 +177,7 @@ void CursorAutoWidget::on_pushButton_2Clicked()
         on_pushButton_2ClickedForTab2();
     }
 }
+
 void CursorAutoWidget::on_pushButton_2ClickedForTab1()
 {
     if (ui->textEdit->toPlainText().isEmpty() || ui->textEdit_2->toPlainText().isEmpty())
@@ -188,8 +192,8 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab1()
     QString curPath = QApplication::applicationFilePath();
     QDir curdir(curPath);
     curdir.cdUp();
-    QString filePath = curdir.absolutePath() + "/HtmlToQtuiInCursor.txt";
-    QString outputFilePath = curdir.absolutePath() + "/Autoui.txt";
+    QString filePath = curdir.absolutePath() + "/templates/HtmlToQtuiInCursor.txt";
+    QString outputFilePath = curdir.absolutePath() + "/templates/Autoui.txt";
 
     QFile inputFile(filePath);
     QFile outputFile(outputFilePath);
@@ -248,9 +252,10 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab1()
             time.start(5000);
             loop.exec();
         }
+
         // 调用 Python 脚本进行窗口操作和键盘模拟
         QStringList arguments;
-        arguments << "-u" << QApplication::applicationDirPath() + "/cursor_operations.py" << m_fileNames.join("\n") << outputFilePath;
+        arguments << "-u" << QApplication::applicationDirPath() + "/templates/cursor_operations.py" << m_fileNames.join("\n") << outputFilePath;
         QProcess::startDetached("python", arguments);
     }
     else
@@ -258,13 +263,14 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab1()
         QMessageBox::warning(this, tr("警告"), tr("请先选择Cursor程序路径!"));
     }
 }
+
 void CursorAutoWidget::on_pushButton_2ClickedForTab2()
 {
     QString curPath = QApplication::applicationFilePath();
     QDir curdir(curPath);
     curdir.cdUp();
-    QString templatePath = curdir.absolutePath() + "/UiFunction_template.txt";
-    QString outputFilePath = curdir.absolutePath() + "/AutouiFunction.txt";
+    QString templatePath = curdir.absolutePath() + "/templates/UiFunction_template.txt";
+    QString outputFilePath = curdir.absolutePath() + "/templates/AutouiFunction.txt";
 
     QFile outputFile(outputFilePath);
     if (outputFile.open(QIODevice::WriteOnly | QIODevice::Text))
@@ -334,12 +340,13 @@ void CursorAutoWidget::on_pushButton_2ClickedForTab2()
             time.setSingleShot(true);
             connect(&time, &QTimer::timeout, &loop, &QEventLoop::quit);
             m_cursorProcess->startDetached(cursorPath);
+
             time.start(5000);
             loop.exec();
         }
         // 调用 Python 脚本进行窗口操作和键盘模拟
         QStringList arguments;
-        arguments << "-u" << QApplication::applicationDirPath() + "/cursor_operations.py" << m_fileNames.join("\n") << outputFilePath;
+        arguments << "-u" << QApplication::applicationDirPath() + "/templates/cursor_operations.py" << m_fileNames.join("\n") << outputFilePath;
         QProcess::startDetached("python", arguments);
     }
     else

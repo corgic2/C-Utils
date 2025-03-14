@@ -1,0 +1,841 @@
+﻿请根据UI组件设计稿的HTML和CSS代码，将其转成Qt的.ui组件
+要求：
+1. 引用组件时，不需要包含路径，仅包含文件名就行如MtLineEdit.h而不是MtCustomPlugin/MtLineEdit.h
+2. 组件个数以及内容不能有遗漏，后续需要使用完整的ui文件内容
+3. 给出的ui文件务必正确，不能出现错误
+4. 优先使用引用的文件
+5. 务必提供根据HTML和CSS代码提供完整的ui文件内容
+6. 不用调整样式和布局，但务必保证内容不能遗漏，如果一次性输出不完整，可以选择让用户继续输出，但不能遗漏内容
+
+
+可能需要使用到的组件有：
+1. MtCheckBox.h
+2. MtLabel.h
+3. MtLineEdit.h
+
+源代码：
+HTML部分： <div class="box_37 flex-col justify-end">
+              <div class="block_7 flex-row justify-between">
+                <span class="text_64">批量删除ROI</span>
+                <img
+                  class="thumbnail_42"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng0827b8a4b1183fdcf427c6123ce4fef21dc8a0206ce8578bbecf0010d1ea7b8d"
+                />
+              </div>
+              <span class="text_33">CT&nbsp;Struct</span>
+              <div class="box_6 flex-col">
+                <div class="box_38 flex-row justify-between">
+                  <div class="image-text_19 flex-row justify-between">
+                    <img
+                      class="thumbnail_43"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb9633348989e27b2199019fab9f544dceaea7b23617ae03259e806a51e540318"
+                    />
+                    <span class="text-group_19">靶区</span>
+                  </div>
+                  <div class="group_35 flex-col"></div>
+                </div>
+                <div class="box_39 flex-row">
+                  <div class="image-wrapper_3 flex-col justify-between">
+                    <img
+                      class="thumbnail_44"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                    />
+                    <img
+                      class="thumbnail_45"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng646430941b5de72b8f0a928280fee1cbb99aaae93b1630d26bf799bcc4184cfb"
+                    />
+                  </div>
+                  <div class="box_40 flex-row">
+                    <div class="image-text_20 flex-row justify-between">
+                      <div class="block_8 flex-col"></div>
+                      <div class="text-group_20 flex-col justify-between">
+                        <span class="text_65">OralCavity_withGum</span>
+                        <span class="text_66">TympanicCavity_L</span>
+                      </div>
+                    </div>
+                    <div class="block_9 flex-col"></div>
+                  </div>
+                  <div class="image-wrapper_4 flex-col justify-between">
+                    <img
+                      class="thumbnail_46"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng646430941b5de72b8f0a928280fee1cbb99aaae93b1630d26bf799bcc4184cfb"
+                    />
+                    <img
+                      class="thumbnail_47"
+                      referrerpolicy="no-referrer"
+                      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng646430941b5de72b8f0a928280fee1cbb99aaae93b1630d26bf799bcc4184cfb"
+                    />
+                  </div>
+                  <div class="box_41 flex-row">
+                    <div class="image-text_21 flex-row justify-between">
+                      <div class="box_42 flex-col"></div>
+                      <div class="text-group_21 flex-col justify-between">
+                        <span class="text_67">OpticChiasm</span>
+                        <span class="text_68">Cochlea_L</span>
+                      </div>
+                    </div>
+                    <div class="image-text_22 flex-row justify-between">
+                      <div class="box_43 flex-col"></div>
+                      <div class="text-group_22 flex-col justify-between">
+                        <span class="text_67">OpticChiasm</span>
+                        <span class="text_68">Cochlea_L</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box_44 flex-row justify-between">
+                  <div class="group_36 flex-col">
+                    <div class="box_45 flex-row justify-between">
+                      <div class="image-text_23 flex-row justify-between">
+                        <img
+                          class="thumbnail_48"
+                          referrerpolicy="no-referrer"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                        />
+                        <span class="text-group_23">非靶区</span>
+                      </div>
+                      <div class="block_10 flex-col"></div>
+                    </div>
+                    <div class="box_46 flex-row">
+                      <img
+                        class="thumbnail_49"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_24 flex-row justify-between">
+                        <div class="box_47 flex-col"></div>
+                        <span class="text-group_24">LarynxExtend</span>
+                      </div>
+                      <img
+                        class="thumbnail_50"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_25 flex-row justify-between">
+                        <div class="group_37 flex-col"></div>
+                        <span class="text-group_25">OpticNerve_R</span>
+                      </div>
+                    </div>
+                    <div class="box_48 flex-row">
+                      <img
+                        class="thumbnail_51"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_26 flex-row justify-between">
+                        <div class="box_49 flex-col"></div>
+                        <span class="text-group_26">Esophagus</span>
+                      </div>
+                      <img
+                        class="thumbnail_52"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_27 flex-row justify-between">
+                        <div class="box_50 flex-col"></div>
+                        <span class="text-group_27"
+                          >TemporalLobe_withHippo_L</span
+                        >
+                      </div>
+                    </div>
+                    <div class="box_51 flex-row">
+                      <img
+                        class="thumbnail_53"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_28 flex-row justify-between">
+                        <div class="section_13 flex-col"></div>
+                        <span class="text-group_28">Eye_L</span>
+                      </div>
+                      <img
+                        class="thumbnail_54"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_29 flex-row justify-between">
+                        <div class="section_14 flex-col"></div>
+                        <span class="text-group_29">SpinalCordExtend</span>
+                      </div>
+                    </div>
+                    <div class="box_52 flex-row">
+                      <img
+                        class="thumbnail_55"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_30 flex-row justify-between">
+                        <div class="group_38 flex-col"></div>
+                        <span class="text-group_30"
+                          >PharyngealConstrictors_M</span
+                        >
+                      </div>
+                      <img
+                        class="thumbnail_56"
+                        referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                      />
+                      <div class="image-text_31 flex-row justify-between">
+                        <div class="group_39 flex-col"></div>
+                        <span class="text-group_31">OpticNerve_L</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_16 flex-col"></div>
+                </div>
+                <div class="box_53 flex-row">
+                  <img
+                    class="thumbnail_57"
+                    referrerpolicy="no-referrer"
+                    src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                  />
+                  <div class="image-text_32 flex-row justify-between">
+                    <div class="box_54 flex-col"></div>
+                    <span class="text-group_32">Etbone_R</span>
+                  </div>
+                  <img
+                    class="thumbnail_58"
+                    referrerpolicy="no-referrer"
+                    src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6743e403d0f8b6e2f8991002df55201c7aa3b7d43f5a4abb1d570a9763c1ed81"
+                  />
+                  <div class="image-text_33 flex-row justify-between">
+                    <div class="section_15 flex-col"></div>
+                    <span class="text-group_33">Brainstem</span>
+                  </div>
+                </div>
+              </div>
+              <div class="block_11 flex-col">
+                <img
+                  class="image_4"
+                  referrerpolicy="no-referrer"
+                  src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng564d9c0a1531478745efdc667c677de7c108e93113aafd25a9ee27f1382244e2"
+                />
+                <div class="group_40 flex-row justify-between">
+                  <div class="text-wrapper_18 flex-col">
+                    <span class="text_69">取消</span>
+                  </div>
+                  <div class="section_16 flex-col"></div>
+                  <div class="text-wrapper_19 flex-col">
+                    <span class="text_70">批量删除</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+CSS部分： 
+.box_37 {
+  width: 570px;
+  height: 437px;
+  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3a737a7b060bda9da43a8af87bffef75bf3c969758d5858a125ce014e192dd1a) -1px -1px
+    no-repeat;
+  background-size: 572px 439px;
+}
+.block_7 {
+  width: 522px;
+  height: 22px;
+  margin: 11px 0 0 24px;
+}
+.text_64 {
+  width: 97px;
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 16px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+.thumbnail_42 {
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+}
+-text_33 {
+  width: 86px;
+  height: 16px;
+  margin-left: 17px;
+}
+.box_6 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 304px;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  width: 522px;
+  margin: 5px 0 0 24px;
+}
+.box_38 {
+  width: 489px;
+  height: 16px;
+  margin: 10px 0 0 17px;
+}
+.image-text_19 {
+  width: 51px;
+  height: 16px;
+}
+.thumbnail_43 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.text-group_19 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.group_35 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 430px;
+  height: 1px;
+  margin-top: 8px;
+}
+.box_39 {
+  width: 386px;
+  height: 44px;
+  margin: 6px 0 0 16px;
+}
+.image-wrapper_3 {
+  width: 12px;
+  height: 39px;
+  margin-top: 3px;
+}
+.thumbnail_44 {
+  width: 10px;
+  height: 10px;
+  margin-left: 1px;
+}
+.thumbnail_45 {
+  width: 12px;
+  height: 12px;
+  margin-top: 17px;
+}
+.box_40 {
+  position: relative;
+  width: 153px;
+  height: 44px;
+  margin-left: 16px;
+}
+.image-text_20 {
+  width: 153px;
+  height: 44px;
+}
+.block_8 {
+  background-color: rgba(169, 255, 125, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_20 {
+  width: 133px;
+  height: 44px;
+}
+.text_65 {
+  width: 133px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.text_66 {
+  width: 119px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.block_9 {
+  background-color: rgba(255, 128, 0, 1);
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+}
+.image-wrapper_4 {
+  width: 12px;
+  height: 40px;
+  margin: 2px 0 0 74px;
+}
+.thumbnail_46 {
+  width: 12px;
+  height: 12px;
+}
+.thumbnail_47 {
+  width: 12px;
+  height: 12px;
+  margin-top: 16px;
+}
+.box_41 {
+  position: relative;
+  width: 103px;
+  height: 44px;
+  margin-left: 16px;
+}
+.image-text_21 {
+  width: 103px;
+  height: 44px;
+}
+.box_42 {
+  background-color: rgba(169, 255, 125, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
+.text-group_21 {
+  width: 83px;
+  height: 44px;
+}
+.text_67 {
+  width: 83px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.text_68 {
+  width: 69px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.image-text_22 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 103px;
+  height: 44px;
+}
+.box_43 {
+  background-color: rgba(4, 86, 255, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_22 {
+  width: 83px;
+  height: 44px;
+}
+.box_44 {
+  width: 503px;
+  height: 122px;
+  margin: 14px 0 0 17px;
+}
+.group_36 {
+  width: 489px;
+  height: 122px;
+}
+.box_45 {
+  width: 489px;
+  height: 16px;
+}
+.image-text_23 {
+  width: 57px;
+  height: 16px;
+}
+.thumbnail_48 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.text-group_23 {
+  width: 36px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.block_10 {
+  background-color: rgba(212, 212, 212, 0.1);
+  width: 430px;
+  height: 1px;
+  margin-top: 8px;
+}
+.box_46 {
+  width: 393px;
+  height: 16px;
+  margin-top: 6px;
+}
+.thumbnail_49 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.image-text_24 {
+  width: 110px;
+  height: 16px;
+  margin-left: 17px;
+}
+.box_47 {
+  background-color: rgba(108, 0, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_24 {
+  width: 90px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_50 {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0 0 118px;
+}
+.image-text_25 {
+  width: 111px;
+  height: 16px;
+  margin-left: 17px;
+}
+.group_37 {
+  background-color: rgba(255, 128, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_25 {
+  width: 91px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.box_48 {
+  width: 484px;
+  height: 16px;
+  margin-top: 12px;
+}
+.thumbnail_51 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.image-text_26 {
+  width: 92px;
+  height: 16px;
+  margin-left: 17px;
+}
+.box_49 {
+  background-color: rgba(4, 86, 255, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_26 {
+  width: 72px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_52 {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0 0 136px;
+}
+.image-text_27 {
+  width: 202px;
+  height: 16px;
+  margin-left: 17px;
+}
+.box_50 {
+  background-color: rgba(108, 0, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_27 {
+  width: 182px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.box_51 {
+  width: 418px;
+  height: 16px;
+  margin-top: 12px;
+}
+.thumbnail_53 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.image-text_28 {
+  width: 61px;
+  height: 16px;
+  margin-left: 17px;
+}
+.section_13 {
+  background-color: rgba(169, 255, 125, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_28 {
+  width: 41px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_54 {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0 0 167px;
+}
+.image-text_29 {
+  width: 136px;
+  height: 16px;
+  margin-left: 17px;
+}
+.section_14 {
+  background-color: rgba(169, 255, 125, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_29 {
+  width: 116px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.box_52 {
+  width: 391px;
+  height: 16px;
+  margin-top: 12px;
+}
+.thumbnail_55 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.image-text_30 {
+  width: 192px;
+  height: 16px;
+  margin-left: 17px;
+}
+.group_38 {
+  background-color: rgba(255, 230, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_30 {
+  width: 172px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_56 {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0 0 36px;
+}
+.image-text_31 {
+  width: 109px;
+  height: 16px;
+  margin-left: 17px;
+}
+.group_39 {
+  background-color: rgba(218, 0, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_31 {
+  width: 89px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.box_16 {
+  background-color: rgba(212, 212, 212, 0.1);
+  border-radius: 3px;
+  width: 4px;
+  height: 107px;
+  margin-top: 2px;
+}
+.box_53 {
+  width: 368px;
+  height: 16px;
+  margin: 12px 0 64px 17px;
+}
+.thumbnail_57 {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+.image-text_32 {
+  width: 84px;
+  height: 16px;
+  margin-left: 17px;
+}
+.box_54 {
+  background-color: rgba(218, 0, 0, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_32 {
+  width: 64px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.thumbnail_58 {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0 0 144px;
+}
+.image-text_33 {
+  width: 86px;
+  height: 16px;
+  margin-left: 17px;
+}
+.section_15 {
+  background-color: rgba(79, 194, 237, 1);
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+}
+.text-group_33 {
+  width: 66px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.block_11 {
+  width: 570px;
+  height: 48px;
+  margin-top: 16px;
+}
+.image_4 {
+  width: 570px;
+  height: 1px;
+}
+.group_40 {
+  width: 200px;
+  height: 30px;
+  margin: 8px 0 9px 346px;
+}
+.text-wrapper_18 {
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid rgba(219, 226, 241, 0.34);
+  width: 80px;
+}
+.text_69 {
+  width: 24px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(212, 212, 212, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 28px;
+}
+.section_16 {
+  width: 16px;
+  height: 22px;
+  margin-top: 4px;
+}
+.text-wrapper_19 {
+  background-color: rgba(177, 89, 89, 1);
+  border-radius: 4px;
+  height: 30px;
+  width: 104px;
+}
+.text_70 {
+  width: 48px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  font-family: FZLTZHK--GBK1-0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 7px 0 0 28px;
+}
