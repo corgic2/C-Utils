@@ -89,10 +89,8 @@ void GetComponentStyleSheet::onWidgetChanged(int index)
     QString widgetName = ui->comboBox->currentText(); // 获取选中的 Widget 名称
     QWidget *widget = contentMap.value(widgetName); // 获取对应的 QWidget 对象
     QStringList listType = GetTypeProperty(widget);
-    if (false == InitType(widget,listType))
-    {
-        onGenerateClicked("");
-    }
+    InitType(widget,listType);
+    onGenerateClicked("");
 }
 
 bool GetComponentStyleSheet::InitType(QWidget* widget, const QStringList& listType)
